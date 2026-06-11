@@ -22,4 +22,5 @@
 # Http headers contains lot of info about file or data, it basically provides Host, user agent, cookies etc..
 # Http Body contains actual info of user or data which we have to provide to server
 # Http status codes start from 1** is a informational , 2** Sucess, 3** Redirect, 4** client err and 5** server err
-
+# Practical--------------
+# analysing the network tool which is have subfiled, header -> provides all info about perticuler file, preview -> provides preview or code, Response -> shows the response or output which is fetch from server.
