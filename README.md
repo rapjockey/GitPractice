@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day01(learning) Date - 10-06-2026 #Diff Between Git and Github 
 
 # there are 4 stages of git init -> git add -> git commit -> git push 
@@ -12,3 +13,4 @@
 # .gitinore -> put the file into this file and files will untrackable for secure or unwanted files # .gitkeep -> git not tracks empty folders there for using this file we force to track folder.
 
 # <---------------------------------------------------------------------------------------------->
+
