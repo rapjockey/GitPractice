@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+        <div id="header">
+            <button id="themeBtn">🌙 Dark Mode</button> <br/>
+
+            <button id="logoutBtn"> Logout</button>
+        </div>
+
+    <input id="searchText" type="text" placeholder = "Enter Name"/>
+    <input type="text" id="name" placeholder="name"/>
+    <input type="email" id="email" placeholder="Email"/>
+
+    <button id="addUser">Create User</button>
+
+    <h1 id="loading" style="display: none;">Loading...</h1>
+    <table>
+        <thead>
+            <th>id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </thead>
+        <tbody id="userList"></tbody>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
