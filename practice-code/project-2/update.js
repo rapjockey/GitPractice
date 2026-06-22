@@ -1,28 +1,27 @@
 const editId = localStorage.getItem("editUserId");
-let userData = [];
+
 
 fetch(`http://localhost:3000/users/${editId}`)
 .then(res => res.json())
 .then(users => {
-    userData = users;
   
     document.getElementById("Fname").value =
-        users.userData.name;
+        users.name;
 
     document.getElementById("Uname").value =
-        users.userData.Username;
+        users.Username;
 
     document.getElementById("password").value =
-        users.userData.password;
+        users.password;
 
     document.getElementById("number").value =
-        users.userData.number;
+        users.number;
 
     document.getElementById("city").value =
-        users.userData.city;
+        users.city;
 
     document.getElementById("department").value =
-        users.userData.department;
+        users.department;
 });
 
 document.getElementById("updateUser")
@@ -51,5 +50,5 @@ document.getElementById("updateUser")
 
     alert("User Updated Successfully");
 
-    window.location.href = "profile.html";
+    window.location.href = "index.html";
 });

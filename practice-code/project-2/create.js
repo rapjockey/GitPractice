@@ -23,12 +23,12 @@ document.getElementById("submitUser").addEventListener("click", async () => {
     };
         
     if (
-        !userData.name ||
-     !userData.Username ||
-    !userData.password ||
-    !userData.number ||
-    !userData.city ||
-    !userData.department
+    !name ||
+    !Username ||
+    !password ||
+    !number ||
+    !city ||
+    !department
         ) {
         alert("All fields are required");
         return;
@@ -46,7 +46,7 @@ document.getElementById("submitUser").addEventListener("click", async () => {
     })
     console.log("User Created" +  createUser);
      const newUser = await createUser.json();
-     window.location.href = "profile.html";
+     window.location.href = "index.html";
 
     }
     catch(error){

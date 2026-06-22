@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+h1,h2,h3{
+    margin-bottom: 15px;
+}
+
+hr{
+    margin: 30px 0;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#themeBtn{
+    background-color: #28a745;
+    margin-bottom: 20px;
+}
+
+#result{
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    min-height: 50px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.dark-mode #result{
+    background-color: #222;
+    border-color: #444;
+}
+
+#count{
+    min-width: 80px;
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+}
+
+#cart{
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px;
+    background-color: #f8f9fa;
+}
+
+.dark-mode #cart{
+    background-color: #222;
+    border-color: #444;
+}
+
+#cart p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dark-mode #cart p{
+    border-bottom: 1px solid #444;
+}
+
+#cart button{
+    background-color: crimson;
+}
+
+#total{
+    margin-top: 15px;
+    color: green;
+    font-size: 22px;
+}
+
+.dark-mode #total{
+    color: #4caf50;
+}
+    </style>
+</head>
+<body>
+    <button id="themeBtn">Light</button>
+    <h1>Pass The information page 2 using localstorage</h1>
+    <button type="button" id="btn">Pass the infomation</button>
+  
+
+
+
+
+<!-- recently visited page -->
+<hr/>
+ <h1>Recently Visited Page</h1>
+
+
+
+<button onclick="visitPage('Home')">Home</button>
+<button onclick="visitPage('About')">About</button>
+<button onclick="visitPage('Contact')">Contact</button>
+
+<h3>Recently Visited</h3>
+<div id="result"></div>
+
+
+
+<!-- counter -->
+<hr/>
+
+<h1>Conter</h1>
+<button  id="increase">Increase</button>
+<button id="count">0</button>
+<button id="decrease">Decrease</button>
+<button id="reset">RESET</button>
+
+
+
+<!-- shoping Cart -->
+<hr/>
+<!DOCTYPE html>
+
+
+    <h2>Shopping Cart</h2>
+
+    <button onclick="addToCart('Laptop', 50000)">
+        Add Laptop
+    </button>
+
+    <button onclick="addToCart('Mobile', 25000)">
+        Add Mobile
+    </button>
+
+    <button onclick="addToCart('Headphone', 3000)">
+        Add Headphone
+    </button>
+
+    <h3>Cart Items</h3>
+
+    <div id="cart"></div>
+
+    <h3 id="total">Total: ₹0</h3>
+
+    <button onclick="clearCart()">
+        Clear Cart
+    </button>
+
+
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
