@@ -57,7 +57,7 @@ function showPages(){
         return;
     }
    
-    document.getElementById("result").innerHTML = pages.split(",");
+    document.getElementById("result").textContent = pages.split(",");
     // localStorage.clear();
     // localStorage.removeItem("pages") 
 }
@@ -131,6 +131,7 @@ function showCart() {
         `;
         total += item.price;
     })
+    
 
     if(cart.length === 0){
         html ="cart is empty";

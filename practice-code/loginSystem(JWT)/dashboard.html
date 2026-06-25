@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            padding:30px;
+        }
+
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:20px;
+        }
+
+        h2{
+            color:#333;
+        }
+
+        #welcome{
+            font-size:25px;
+            font-weight:bold;
+            color:#555;
+             margin-right: 50px;
+           
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            border-radius:8px;
+            overflow:hidden;
+        }
+
+        thead{
+            background:#007bff;
+            color:white;
+        }
+
+        th,
+        td{
+            padding:12px;
+            text-align:left;
+            border-bottom:1px solid #ddd;
+        }
+
+        tbody tr:hover{
+            background:#f1f1f1;
+        }
+
+        #logoutBtn{
+            padding:10px 20px;
+            background:#dc3545;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        #logoutBtn:hover{
+            background:#c82333;
+        }
+
+        @media(max-width:768px){
+            .header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            table{
+                display:block;
+                overflow-x:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>User Dashboard</h2>
+
+        <h1 id="welcome">
+            Welcome Rahul
+        </h1>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Number</th>
+                <th>City</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableData">
+            <!-- Data will come from dashboard.js -->
+        </tbody>
+    </table>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
